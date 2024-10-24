@@ -17,8 +17,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="Imagenes/logo.jpeg" alt="Logo Prueba" width="40" height="40" class="d-inline-block align-top">
-          Al Fresco Eventos
+          <img src="Imagenes/logo.jpg" alt="Logo Prueba" width="40" height="40" class="d-inline-block align-top">
+          SAGA Events
         </a>
 
         <!-- Botón para dispositivos móviles -->
@@ -32,15 +32,26 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active" href="index.html">Home</a>
+
+          <!-- Menú desplegable para Quienes somos -->  
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="quienessomos.html" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Quienes Somos?
+              </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownQuienesSomos">
+              <li><a class="dropdown-item" href="quienessomos.html#mision">Misión</a></li>
+              <li><a class="dropdown-item" href="quienessomos.html#vision">Visión</a></li>
+              <li><a class="dropdown-item" href="quienessomos.html#valores">Valores</a></li>
+              <li><a class="dropdown-item" href="quienessomos.html#nuestroequipo">Nuestro Equipo</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="quienessomos.html#historia">Historia</a></li>
+            </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="quienessomos.html">¿Quiénes Somos?</a>
-            </li>
+
 
             <!-- Menú desplegable para Mobiliario -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
-                 data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="mobiliario.html" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Mobiliario
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -52,7 +63,6 @@
                 <li><a class="dropdown-item" href="galeria.html#periqueras">Periqueras</a></li>
                 <li><hr class="dropdown-divider"></li>
               </ul>
-            </li>
             </li>
 
             <li class="nav-item">
@@ -67,6 +77,21 @@
             <li class="nav-item">
               <a class="btn btn-highlight" href="contacto.html">Contacto</a>
             </li>
+            
+            <!-- Botón de Iniciar Sesión -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="iniciar-sesion.html" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Iniciar Sesión
+              </a>
+              <div class="dropdown-menu" aria-labelledby="loginDropdown">
+                <a class="dropdown-item" href="#">Configuración de Cuenta</a>
+                <a class="dropdown-item" href="#">Puntos</a>
+                <a class="dropdown-item" href="#">Registros de Rentas</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Cerrar Sesión</a>
+              </div>
+            </li>
+
           </ul>
         </div>
       </div>

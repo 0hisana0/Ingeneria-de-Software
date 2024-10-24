@@ -29,3 +29,12 @@
   background-color: #ff9c33;
 }
 
+
+.dropdown-menu {
+  display: none; /* Ocultar el menú por defecto */
+}
+
+.nav-item:hover .dropdown-menu {
+  display: block; /* Mostrar el menú cuando el cursor está sobre el ítem */
+}
+
