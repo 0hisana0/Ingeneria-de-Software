@@ -6,11 +6,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-
-    <!-- Enlace al archivo CSS personalizado -->
     <link rel="stylesheet" href="css/estilos.css">
 
-    <title>Cotiza</title>
+    <title>Cotiza tu Evento - SAGA Events</title>
   </head>
   <body>
     <!-- Barra de navegación -->
@@ -20,124 +18,62 @@
           <img src="Imagenes/logo.jpg" alt="Logo Prueba" width="40" height="40" class="d-inline-block align-top">
           SAGA Events
         </a>
-
-        <!-- Botón para dispositivos móviles -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- Menú de navegación -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
-
-          <!-- Menú desplegable para Quienes somos -->  
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="quienessomos.html" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Quienes Somos?
-              </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownQuienesSomos">
-              <li><a class="dropdown-item" href="quienessomos.html#mision">Misión</a></li>
-              <li><a class="dropdown-item" href="quienessomos.html#vision">Visión</a></li>
-              <li><a class="dropdown-item" href="quienessomos.html#valores">Valores</a></li>
-              <li><a class="dropdown-item" href="quienessomos.html#nuestroequipo">Nuestro Equipo</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="quienessomos.html#historia">Historia</a></li>
-            </ul>
-            </li>
-
-
-            <!-- Menú desplegable para Mobiliario -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="mobiliario.html" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Mobiliario
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="galeria.html#mesas">Mesas</a></li>
-                <li><a class="dropdown-item" href="galeria.html#sillas">Sillas</a></li>
-                <li><a class="dropdown-item" href="galeria.html#inflables">Inflables</a></li>
-                <li><a class="dropdown-item" href="galeria.html#carpas">Carpas</a></li>
-                <li><a class="dropdown-item" href="galeria.html#tarimas">Tarimas</a></li>
-                <li><a class="dropdown-item" href="galeria.html#periqueras">Periqueras</a></li>
-                <li><hr class="dropdown-divider"></li>
-              </ul>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="servicios.html">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="galeria.html">Galería</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="cotiza.html">Cotiza tu Evento</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-highlight" href="contacto.html">Contacto</a>
-            </li>
-            
-            <!-- Botón de Iniciar Sesión -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="iniciar-sesion.html" id="loginDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Iniciar Sesión
-              </a>
-              <div class="dropdown-menu" aria-labelledby="loginDropdown">
-                <a class="dropdown-item" href="#">Configuración de Cuenta</a>
-                <a class="dropdown-item" href="#">Puntos</a>
-                <a class="dropdown-item" href="#">Registros de Rentas</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Cerrar Sesión</a>
-              </div>
-            </li>
-
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="quienessomos.html">¿Quiénes Somos?</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
+            <li class="nav-item"><a class="nav-link active" href="cotiza.html">Cotiza tu Evento</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Sección principal con imagen de fondo -->
+    <!-- Sección principal con fondo -->
     <div class="hero d-flex justify-content-center align-items-center" 
          style="background-image: url('Imagenes/fondo.png'); height: 100vh; background-size: cover; background-position: center;">
-    </div>
-
-
-
-   <!-- Sección de cotización -->
-    <div class="container mt-5 pt-5">
-        <h1 class="text-center">Cotiza tu Evento</h1>
-        <p class="text-center">Completa el siguiente formulario y te enviaremos una cotización personalizada.</p>
+      <div class="container text-white bg-dark p-5 rounded" style="max-width: 600px; opacity: 0.9;">
+        <h1 class="text-center mb-4">Cotiza tu Evento</h1>
+        <p class="text-center mb-4">Completa el formulario y te enviaremos una cotización personalizada.</p>
         <form>
-            <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="tipoEvento" class="form-label">Tipo de Evento</label>
-                <select class="form-select" id="tipoEvento" required>
-                    <option value="" disabled selected>Selecciona un tipo de evento</option>
-                    <option value="Boda">Boda</option>
-                    <option value="Cumpleaños">Cumpleaños</option>
-                    <option value="Fiesta Corporativa">Fiesta Corporativa</option>
-                    <option value="Bautizo">Bautizo</option>
-                    <option value="Otro">Otro</option>
-                </select>
-            </div>
-            <div class="mb-3">
-                <label for="fechaEvento" class="form-label">Fecha del Evento</label>
-                <input type="date" class="form-control" id="fechaEvento" required>
-            </div>
-            <div class="mb-3">
-                <label for="detalles" class="form-label">Detalles Adicionales</label>
-                <textarea class="form-control" id="detalles" rows="5" placeholder="Escribe aquí cualquier detalle adicional..." required></textarea>
-            </div>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre Completo</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre completo" required>
+          </div>
+          <div class="mb-3">
+            <label for="correo" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="correo" placeholder="ejemplo@correo.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="tipoEvento" class="form-label">Tipo de Evento</label>
+            <select class="form-select" id="tipoEvento" required>
+              <option value="" disabled selected>Selecciona un tipo de evento</option>
+              <option value="Boda">Boda</option>
+              <option value="Cumpleaños">Cumpleaños</option>
+              <option value="Fiesta Corporativa">Fiesta Corporativa</option>
+              <option value="Bautizo">Bautizo</option>
+              <option value="Otro">Otro</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="fechaEvento" class="form-label">Fecha del Evento</label>
+            <input type="date" class="form-control" id="fechaEvento" required>
+          </div>
+          <div class="mb-3">
+            <label for="detalles" class="form-label">Detalles Adicionales</label>
+            <textarea class="form-control" id="detalles" rows="4" placeholder="Escribe detalles adicionales (cantidad de personas, equipo necesario, etc.)"></textarea>
+          </div>
+          <div class="d-grid">
             <button type="submit" class="btn btn-primary">Enviar Cotización</button>
+          </div>
         </form>
+      </div>
     </div>
 
     <!-- Bootstrap JS -->
